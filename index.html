@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SVF Homes – Ambattur A2B</title>
+  <link rel="stylesheet" href="style.css?v=2"/>
+  <link href="https://fonts.googleapis.com/css2?family=Tapestry&family=Italiana&family=Josefin+Sans:wght@300;400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ═══════════ PAGE STACK ═══════════ -->
+<div class="page-stack">
+
+  <!-- ▓▓▓ PAGE 0 – LANDING ▓▓▓ -->
+  <div class="stack-page landing-page" data-index="0">
+
+    <header class="top-bar">
+      <img src="images/logo.png" alt="SVF Homes" class="logo" onclick="window.open('https://www.svfhomes.in/','_blank')" title="Visit SVF Homes Website" style="cursor:pointer;"/>
+    </header>
+
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+        <source src="background.mp4" type="video/mp4"/>
+        <img src="images/A2B.png" alt="SVF Ambattur A2B" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+      </video>
+      <div class="video-fallback"></div>
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <p class="hero-sub">SVF Homes Presents</p>
+          <div class="hero-ornament"><span>✦</span></div>
+          <h1 class="hero-title">SVF Nova Flats<br/><span>Stedford, Ambattur</span><br/><span style="font-size:0.6em; font-weight:300; letter-spacing:0.2em;">Next Generation - AI</span></h1>
+          <p class="hero-tagline">Premium Residences &nbsp;·&nbsp; Since 2008</p>
+          <button class="btn-learn" onclick="openSections()">
+            <span></span>Explore</span>&nbsp;<i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span></span>
+        scroll
+      </div>
+    </div>
+
+  </div><!-- end page 0 -->
+
+
+  <!-- ▓▓▓ STICKY NAV HEADER (appears after landing) ▓▓▓ -->
+  <header class="page-header">
+    <img src="images/logo.png" alt="SVF Homes" class="header-logo" onclick="window.open('https://www.svfhomes.in/','_blank')" title="Visit SVF Homes Website"/>
+    <nav>
+      <button class="nav-pill" data-page="1" onclick="goTo(1)">About</button>
+      <button class="nav-pill" data-page="2" onclick="goTo(2)">Smart Living</button>
+      <button class="nav-pill" data-page="3" onclick="goTo(3)">Floor Plans</button>
+      <button class="nav-pill" data-page="4" onclick="goTo(4)">Brochure</button>
+      <button class="nav-pill" data-page="5" onclick="goTo(5)">Location</button>
+      <button class="nav-pill" onclick="backToLanding()"><i class="fas fa-arrow-left"></i> Home</button>
+    </nav>
+  </header>
+
+
+  <!-- ▓▓▓ PAGE 1 – ABOUT ▓▓▓ -->
+  <div class="stack-page about-page" data-index="1">
+
+    <div class="page-body">
+
+      <span class="eyebrow">About the Project</span>
+
+      <div class="about-grid">
+        <!-- Text col -->
+        <div class="about-text">
+          <h2>Welcome to<br/><em>SVF Nova Flats (Smart Home)</em></h2>
+          <p style="font-size:1.1em; color:#d4af37; margin-bottom:1.5rem; letter-spacing:0.1em;">Next Generation - AI</p>
+          <p>SVF Homes presents a premium smart residential community nestled in the heart of Ambattur A2B, Chennai. Thoughtfully designed for modern families who seek comfort, elegance, seamless connectivity, and intelligent living powered by AI technology.</p>
+          <p>Since 2008, SVF Homes has been a trusted name in quality construction — delivering dream homes across Chennai with a steadfast focus on trust, transparency, and timeless design. Now, we bring you the future of living with AI-powered smart home features.</p>
+
+          <div class="highlights-grid">
+            <div class="hl-card">
+              <i class="fas fa-building"></i>
+              <h4>Premium Apartments</h4>
+              <p>Thoughtfully designed 2 &amp; 3 BHK units</p>
+            </div>
+            <div class="hl-card">
+              <i class="fas fa-leaf"></i>
+              <h4>Green Spaces</h4>
+              <p>Lush landscaped gardens &amp; open areas</p>
+            </div>
+            <div class="hl-card">
+              <i class="fas fa-shield-alt"></i>
+              <h4>24/7 Security</h4>
+              <p>CCTV surveillance &amp; gated community</p>
+            </div>
+            <div class="hl-card">
+              <i class="fas fa-car"></i>
+              <h4>Covered Parking</h4>
+              <p>Dedicated parking for every unit</p>
+            </div>
+          </div>
+
+          <!-- Smart Living Highlight Banner -->
+          <div class="smart-preview-banner">
+            <div class="spb-content">
+              <div class="spb-tag"><i class="fas fa-microchip"></i> Next Generation AI Living</div>
+              <p>Experience automated Smart Door, Smart Lighting, Smart Climate &amp; Smart Water Tank.</p>
+            </div>
+            <button class="btn-smart-link" onclick="goTo(2)">
+              Smart Living <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="stats-strip">
+            <div class="stat-item"><div class="num">15+</div><div class="lbl">Years Legacy</div></div>
+            <div class="stat-item"><div class="num">500+</div><div class="lbl">Happy Families</div></div>
+            <div class="stat-item"><div class="num">12</div><div class="lbl">Projects Done</div></div>
+            <div class="stat-item"><div class="num">4.9★</div><div class="lbl">Rating</div></div>
+          </div>
+        </div>
+
+        <!-- Visual col -->
+        <div class="about-visual">
+          <div class="img-frame">
+            <img src="images/A2B.png" alt="SVF Ambattur A2B" class="project-img"/>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end page-body -->
+  </div><!-- end page 1 -->
+
+
+  <!-- ▓▓▓ PAGE 2 – SMART LIVING ▓▓▓ -->
+  <div class="stack-page smartliving-page" data-index="2">
+
+    <div class="smart-body">
+
+      <div class="smart-intro">
+        <div>
+          <span class="eyebrow">Next Generation Living · AI Powered</span>
+          <h2>Smart Living</h2>
+        </div>
+        <div class="smart-tabs">
+          <button class="smart-tab active" data-device="smart-door" onclick="switchSmartDevice('smart-door')">
+            <i class="fas fa-door-closed"></i> Smart Door
+          </button>
+          <button class="smart-tab" data-device="smart-light" onclick="switchSmartDevice('smart-light')">
+            <i class="fas fa-lightbulb"></i> Smart Light
+          </button>
+          <button class="smart-tab" data-device="smart-fan" onclick="switchSmartDevice('smart-fan')">
+            <i class="fas fa-fan"></i> Smart Fan
+          </button>
+          <button class="smart-tab" data-device="smart-water-tank" onclick="switchSmartDevice('smart-water-tank')">
+            <i class="fas fa-water"></i> Smart Water Tank
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Showcase Grid -->
+      <div class="smart-layout">
+
+        <!-- Left: Image Viewer with Expand & Arrows -->
+        <div class="smart-display-col">
+          <div class="smart-image-frame" onclick="openSmartLightbox()" title="Click to view full screen">
+            <!-- 1. Smart Door -->
+            <div class="smart-img-wrapper active" id="img-smart-door">
+              <img src="images/smart-door.png" alt="Smart Door – Secure Access, Made Simple"/>
+              <div class="smart-img-badge"><i class="fas fa-shield-alt"></i> Biometric Access</div>
+            </div>
+            <!-- 2. Smart Light -->
+            <div class="smart-img-wrapper" id="img-smart-light">
+              <img src="images/smart-light.png" alt="Smart Light – Control Lighting from Anywhere"/>
+              <div class="smart-img-badge"><i class="fas fa-bolt"></i> Smart Automation</div>
+            </div>
+            <!-- 3. Smart Fan -->
+            <div class="smart-img-wrapper" id="img-smart-fan">
+              <img src="images/smart-fan.png" alt="Smart Fan – Control Comfort from Anywhere"/>
+              <div class="smart-img-badge"><i class="fas fa-wind"></i> Intelligent Climate</div>
+            </div>
+            <!-- 4. Smart Water Tank -->
+            <div class="smart-img-wrapper" id="img-smart-water-tank">
+              <img src="images/smart-water-tank.png" alt="Smart Water Tank – Smart Auto-Fill &amp; Alerts"/>
+              <div class="smart-img-badge"><i class="fas fa-tint"></i> Auto-Fill &amp; Monitoring</div>
+            </div>
+
+            <div class="smart-frame-overlay">
+              <span class="zoom-btn"><i class="fas fa-search-plus"></i> View Full Image</span>
+            </div>
+          </div>
+
+          <div class="smart-nav-bar">
+            <button class="smart-nav-btn prev" onclick="prevSmartDevice()"><i class="fas fa-arrow-left"></i> Previous</button>
+            <div class="smart-counter-pill">
+              <span id="smartCurrentIdx">1</span> &nbsp;/&nbsp; 4
+            </div>
+            <button class="smart-nav-btn next" onclick="nextSmartDevice()">Next <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Right: Details Specification Card -->
+        <div class="smart-info-col">
+
+          <!-- 1. Smart Door Details -->
+          <div class="smart-device-view active" id="view-smart-door">
+            <div class="smart-view-header">
+              <div class="smart-icon-badge"><i class="fas fa-door-open"></i></div>
+              <div>
+                <h3>Smart Door</h3>
+                <p class="smart-tagline">Secure access, made simple</p>
+              </div>
+            </div>
+            <p class="smart-desc">Step into the future with keyless biometric security. Unlock your home in milliseconds with advanced fingerprint authentication, monitor real-time door activity, and manage guest entry directly from your smartphone.</p>
+            <ul class="smart-specs">
+              <li><i class="fas fa-fingerprint"></i> Biometric Fingerprint Unlock <strong>Instant 0.3s Access</strong></li>
+              <li><i class="fas fa-mobile-alt"></i> Mobile App Control <strong>Remote Lock / Unlock</strong></li>
+              <li><i class="fas fa-history"></i> Real-Time Access Logs <strong>Instant Push Alerts</strong></li>
+              <li><i class="fas fa-key"></i> Dual Access Backup <strong>Passcode &amp; Emergency Key</strong></li>
+            </ul>
+            <div class="smart-feature-box">
+              <div class="sfb-label">Next Generation AI Feature</div>
+              <div class="sfb-title">24/7 Gated Security Integration</div>
+              <p class="sfb-desc">Pre-installed and connected to SVF Nova Flats centralized security ecosystem.</p>
+            </div>
+          </div>
+
+          <!-- 2. Smart Light Details -->
+          <div class="smart-device-view" id="view-smart-light">
+            <div class="smart-view-header">
+              <div class="smart-icon-badge"><i class="fas fa-lightbulb"></i></div>
+              <div>
+                <h3>Smart Lighting</h3>
+                <p class="smart-tagline">Control your lighting from anywhere</p>
+              </div>
+            </div>
+            <p class="smart-desc">Effortlessly curate the perfect ambiance in every corner of your home. Switch lights on or off remotely, set automated schedules, and optimize household energy consumption using your smartphone or voice commands.</p>
+            <ul class="smart-specs">
+              <li><i class="fas fa-power-off"></i> One-Tap Remote ON / OFF <strong>App &amp; Voice Control</strong></li>
+              <li><i class="fas fa-sliders-h"></i> Scene &amp; Mood Lighting <strong>Living &amp; Bedroom Presets</strong></li>
+              <li><i class="fas fa-clock"></i> Intelligent Timers <strong>Sunrise / Sunset Automation</strong></li>
+              <li><i class="fas fa-leaf"></i> Energy Conservation <strong>Low Power Eco-Friendly LEDs</strong></li>
+            </ul>
+            <div class="smart-feature-box">
+              <div class="sfb-label">Next Generation AI Feature</div>
+              <div class="sfb-title">Automated Scene Coordination</div>
+              <p class="sfb-desc">Sync living room and bedroom lights for effortless welcome and departure routines.</p>
+            </div>
+          </div>
+
+          <!-- 3. Smart Fan Details -->
+          <div class="smart-device-view" id="view-smart-fan">
+            <div class="smart-view-header">
+              <div class="smart-icon-badge"><i class="fas fa-fan"></i></div>
+              <div>
+                <h3>Smart Climate</h3>
+                <p class="smart-tagline">Control your comfort from anywhere</p>
+              </div>
+            </div>
+            <p class="smart-desc">Experience intelligent airflow and personalized cooling at your command. Adjust fan speeds seamlessly through your phone, activate sleep timers for peaceful nights, and enjoy energy-efficient BLDC motor performance.</p>
+            <ul class="smart-specs">
+              <li><i class="fas fa-tachometer-alt"></i> Precision Speed Control <strong>Multi-Speed Regulation</strong></li>
+              <li><i class="fas fa-mobile-alt"></i> Smartphone Connectivity <strong>Control From Anywhere</strong></li>
+              <li><i class="fas fa-moon"></i> Sleep Mode &amp; Timers <strong>Auto-Shutoff Schedules</strong></li>
+              <li><i class="fas fa-wind"></i> Whisper-Quiet BLDC Motor <strong>Maximum Energy Savings</strong></li>
+            </ul>
+            <div class="smart-feature-box">
+              <div class="sfb-label">Next Generation AI Feature</div>
+              <div class="sfb-title">Smart Airflow Automation</div>
+              <p class="sfb-desc">Engineered for silent, powerful circulation and responsive mobile comfort management.</p>
+            </div>
+          </div>
+
+          <!-- 4. Smart Water Tank Details -->
+          <div class="smart-device-view" id="view-smart-water-tank">
+            <div class="smart-view-header">
+              <div class="smart-icon-badge"><i class="fas fa-water"></i></div>
+              <div>
+                <h3>Smart Water Tank</h3>
+                <p class="smart-tagline">Smart Auto-Fill &amp; Alerts</p>
+              </div>
+            </div>
+            <p class="smart-desc">Never run dry or waste a drop. The AI-integrated water system constantly monitors overhead tank levels in real time, automates pump filling cycles, and alerts you instantly before water levels run low.</p>
+            <ul class="smart-specs">
+              <li><i class="fas fa-tachometer-alt"></i> Real-Time Water Level <strong>Live Mobile Percentage</strong></li>
+              <li><i class="fas fa-cogs"></i> Intelligent Auto-Fill Control <strong>Automated Motor Pump Switch</strong></li>
+              <li><i class="fas fa-bell"></i> Proactive Alerts <strong>Low Level &amp; Overflow Push Alerts</strong></li>
+              <li><i class="fas fa-chart-line"></i> Daily Usage Tracking <strong>Conservation &amp; Leak Monitoring</strong></li>
+            </ul>
+            <div class="smart-feature-box">
+              <div class="sfb-label">Next Generation AI Feature</div>
+              <div class="sfb-title">Automated Water Security</div>
+              <p class="sfb-desc">Zero manual pump switching — continuous, reliable 24/7 water supply for every flat.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div><!-- end smart-layout -->
+
+    </div><!-- end smart-body -->
+  </div><!-- end page 2 -->
+
+
+  <!-- ▓▓▓ PAGE 3 – FLOOR PLANS ▓▓▓ -->
+  <div class="stack-page floorplan-page" data-index="3">
+
+    <div class="plan-body">
+
+      <div class="plan-intro">
+        <div>
+          <span class="eyebrow">Floor Plans</span>
+          <h2>Choose Your Space</h2>
+        </div>
+        <div class="plan-tabs">
+          <button class="plan-tab active" onclick="switchPlan(this,'plan2bhk')">2 BHK</button>
+          <button class="plan-tab" onclick="switchPlan(this,'plan3bhk')">3 BHK</button>
+        </div>
+      </div>
+
+      <!-- 2 BHK -->
+      <div id="plan2bhk" class="plan-content active">
+        <div class="plan-layout">
+
+          <!-- Left: image viewer with 2D/3D toggle -->
+          <div class="plan-image-area">
+            <div class="view-toggle">
+              <button class="view-btn active" onclick="switchView(this,'img-2bhk-2d')">
+                <i class="fas fa-vector-square"></i> 2D Plan
+              </button>
+              <button class="view-btn" onclick="switchView(this,'img-2bhk-3d')">
+                <i class="fas fa-cube"></i> 3D View
+              </button>
+            </div>
+            <div class="plan-image-frame">
+              <img id="img-2bhk-2d" src="images/Floor_Plan_2D.png" alt="2D Floor Plan – 2 BHK" style="display:block"/>
+              <img id="img-2bhk-3d" src="images/Floor_Plan_3D.png" alt="3D Floor Plan – 2 BHK" style="display:none"/>
+            </div>
+            <a href="images/Floor_Plan_2D.png" download="SVF_A2B_2BHK_2D_FloorPlan.png" id="dl-2bhk" class="btn-download-plan">
+              <i class="fas fa-download"></i> Download This Plan
+            </a>
+          </div>
+
+          <!-- Right: specs card -->
+          <div class="plan-details-card">
+            <h3>2 BHK Apartment</h3>
+            <ul class="plan-specs">
+              <li><i class="fas fa-ruler-combined"></i> Super Built-up <strong>950 sq.ft</strong></li>
+              <li><i class="fas fa-bed"></i> Bedrooms <strong>2</strong></li>
+              <li><i class="fas fa-bath"></i> Bathrooms <strong>2</strong></li>
+              <li><i class="fas fa-couch"></i> Living + Dining <strong>Yes</strong></li>
+              <li><i class="fas fa-utensils"></i> Kitchen <strong>Yes</strong></li>
+              <li><i class="fas fa-wind"></i> Balcony <strong>2</strong></li>
+              <li><i class="fas fa-layer-group"></i> Floor Options <strong>G + 3</strong></li>
+            </ul>
+            <div class="price-box">
+              Starting from
+              <span class="price-val">₹60 Lakhs*</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3 BHK -->
+      <div id="plan3bhk" class="plan-content">
+        <div class="plan-layout">
+
+          <!-- Left: image viewer with 2D/3D toggle -->
+          <div class="plan-image-area">
+            <div class="view-toggle">
+              <button class="view-btn active" onclick="switchView(this,'img-3bhk-2d')">
+                <i class="fas fa-vector-square"></i> 2D Plan
+              </button>
+              <button class="view-btn" onclick="switchView(this,'img-3bhk-3d')">
+                <i class="fas fa-cube"></i> 3D View
+              </button>
+            </div>
+            <div class="plan-image-frame">
+              <img id="img-3bhk-2d" src="images/Floor_Plan_2D.png" alt="2D Floor Plan – 3 BHK" style="display:block"/>
+              <img id="img-3bhk-3d" src="images/Floor_Plan_3D.png" alt="3D Floor Plan – 3 BHK" style="display:none"/>
+            </div>
+            <a href="images/Floor_Plan_2D.png" download="SVF_A2B_3BHK_2D_FloorPlan.png" id="dl-3bhk" class="btn-download-plan">
+              <i class="fas fa-download"></i> Download This Plan
+            </a>
+          </div>
+
+          <!-- Right: specs card -->
+          <div class="plan-details-card">
+            <h3>3 BHK Apartment</h3>
+            <ul class="plan-specs">
+              <li><i class="fas fa-ruler-combined"></i> Super Built-up <strong>1200 sq.ft</strong></li>
+              <li><i class="fas fa-bed"></i> Bedrooms <strong>3</strong></li>
+              <li><i class="fas fa-bath"></i> Bathrooms <strong>3</strong></li>
+              <li><i class="fas fa-couch"></i> Living + Dining <strong>Yes</strong></li>
+              <li><i class="fas fa-utensils"></i> Kitchen <strong>Yes</strong></li>
+              <li><i class="fas fa-wind"></i> Balcony <strong>3</strong></li>
+              <li><i class="fas fa-layer-group"></i> Floor Options <strong>G + 2 (A-block, B-block)</strong></li>
+            </ul>
+            <div class="price-box">
+              Starting from
+              <span class="price-val">₹70 Lakhs*</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- end plan-body -->
+  </div><!-- end page 3 -->
+
+
+  <!-- ▓▓▓ PAGE 4 – BROCHURE ▓▓▓ -->
+  <div class="stack-page brochure-page" data-index="4">
+
+    <div class="brochure-body">
+      <span class="eyebrow">Downloads</span>
+
+      <div class="brochure-grid">
+        <!-- Brochure Image Preview -->
+        <div class="brochure-cover">
+          <img src="images/Brouchure.jpeg" alt="SVF Ambattur A2B Brochure" class="brochure-preview-img"/>
+          <div class="brochure-cover-border"></div>
+        </div>
+
+        <!-- Info -->
+        <div class="brochure-info">
+          <h2>Project Brochure</h2>
+          <p class="sub-text">Everything you need to know about SVF Ambattur A2B — floor plans, amenities, pricing, and more — in one handy document.</p>
+
+          <ul class="brochure-checklist">
+            <li><i class="fas fa-check-circle"></i> Complete Floor Plans &amp; Layouts</li>
+            <li><i class="fas fa-check-circle"></i> Amenities &amp; Specifications</li>
+            <li><i class="fas fa-check-circle"></i> Pricing &amp; Payment Plans</li>
+            <li><i class="fas fa-check-circle"></i> Location Advantages</li>
+            <li><i class="fas fa-check-circle"></i> Developer Profile &amp; Past Projects</li>
+          </ul>
+
+          <a href="images/Brouchure.jpeg" download="SVF_Ambattur_A2B_Brochure.jpeg" class="btn-download">
+            <i class="fas fa-download"></i> Download Brochure
+          </a>
+          <p class="file-note"><i class="fas fa-file-image"></i> JPEG &nbsp;·&nbsp; Brochure Image</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end page 4 -->
+
+
+  <!-- ▓▓▓ PAGE 5 – LOCATION ▓▓▓ -->
+  <div class="stack-page location-page" data-index="5">
+
+    <div class="location-body">
+
+      <div class="location-intro">
+        <span class="eyebrow">Find Us</span>
+        <h2>Our Location</h2>
+        <p>Located at Lenin Nagar, Thirumullaivoyal, Avadi, Chennai — well connected to schools, hospitals, IT parks, and transport hubs.</p>
+      </div>
+
+      <div class="location-grid">
+        <!-- Map -->
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3885.3!2d80.1394093!3d13.1297307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263004380db6d%3A0x5f1f1a64111fc1c5!2sSVF+Majestic+Flats!5e0!3m2!1sen!2sin!4v1728399600000!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;display:block;flex:1;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="SVF Majestic Flats Location">
+          </iframe>
+          <a href="https://maps.google.com/maps/place/SVF+Majestic+Flats/@13.1297307,80.1394093,17z" target="_blank" class="open-map-btn">
+            <i class="fas fa-map-marker-alt"></i>&nbsp; Open in Google Maps
+          </a>
+        </div>
+
+        <!-- Landmarks -->
+        <div class="landmarks-panel">
+          <h3><i class="fas fa-map-pin"></i> Nearby Landmarks</h3>
+          <ul class="landmark-list">
+            <li>
+              <span class="lm-icon hospital"><i class="fas fa-hospital"></i></span>
+              <div class="lm-text"><strong>Be Well Hospital Ambattur</strong><span>~1.2 km away</span></div>
+            </li>
+            <li>
+              <span class="lm-icon hospital"><i class="fas fa-hospital"></i></span>
+              <div class="lm-text"><strong>Sir Ivan Stedeford Hospital</strong><span>~1.5 km away</span></div>
+            </li>
+            <li>
+              <span class="lm-icon school"><i class="fas fa-school"></i></span>
+              <div class="lm-text"><strong>Aarthi Scans &amp; Labs</strong><span>~0.9 km away</span></div>
+            </li>
+            <li>
+              <span class="lm-icon transport"><i class="fas fa-bus"></i></span>
+              <div class="lm-text"><strong>Thirumullaivoyal Bus Stop</strong><span>~0.5 km away</span></div>
+            </li>
+            <li>
+              <span class="lm-icon transport"><i class="fas fa-train"></i></span>
+              <div class="lm-text"><strong>Thirumullaivoyal Railway Station</strong><span>~1.8 km away</span></div>
+            </li>
+            <li>
+              <span class="lm-icon mall"><i class="fas fa-shopping-bag"></i></span>
+              <div class="lm-text"><strong>Adyar Ananda Bhavan – A2B</strong><span>~0.6 km away</span></div>
+            </li>
+            <li>
+              <span class="lm-icon airport"><i class="fas fa-plane"></i></span>
+              <div class="lm-text"><strong>Chennai International Airport</strong><span>~16 km away</span></div>
+            </li>
+          </ul>
+
+          <div class="address-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Project Address</strong>
+              <p>SVF Majestic Flats, 451/2,<br/>Lenin Nagar, Arthi Nagar,<br/>Thirumullaivoyal, Avadi,<br/>Tamil Nadu – 600053</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end location-body -->
+
+    <footer class="site-footer">
+      <img src="images/logo.png" alt="SVF Homes" class="footer-logo"/>
+      <div class="footer-links">
+        <a href="tel:+919876543210"><i class="fas fa-phone"></i> +91 98765 43210</a>
+        <a href="mailto:info@svfhomes.com"><i class="fas fa-envelope"></i> info@svfhomes.com</a>
+        <a href="https://www.svfhomes.com" target="_blank"><i class="fas fa-globe"></i> www.svfhomes.com</a>
+      </div>
+      <p class="footer-copy">© 2026 SVF Homes. All rights reserved. Since 2008.</p>
+    </footer>
+
+  </div><!-- end page 5 -->
+
+</div><!-- end page-stack -->
+
+
+<!-- Navigation Dots -->
+<nav class="nav-dots" id="navDots">
+  <button class="dot" onclick="goTo(1)" title="About"></button>
+  <button class="dot" onclick="goTo(2)" title="Smart Living"></button>
+  <button class="dot" onclick="goTo(3)" title="Floor Plans"></button>
+  <button class="dot" onclick="goTo(4)" title="Brochure"></button>
+  <button class="dot" onclick="goTo(5)" title="Location"></button>
+</nav>
+
+<!-- Lightbox Modal for Smart Living Images -->
+<div class="smart-lightbox" id="smartLightbox" onclick="closeSmartLightbox()">
+  <div class="smart-lightbox-content" onclick="event.stopPropagation()">
+    <button class="smart-lightbox-close" onclick="closeSmartLightbox()" aria-label="Close lightbox">&times;</button>
+    <img id="smartLightboxImg" src="images/smart-door.png" alt="Smart Device Preview"/>
+    <p class="smart-lightbox-caption" id="smartLightboxCaption">Smart Door</p>
+  </div>
+</div>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>
